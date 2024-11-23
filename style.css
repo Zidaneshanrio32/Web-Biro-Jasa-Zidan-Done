@@ -1,0 +1,217 @@
+/* Resetting basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #2d3436;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 0 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* Services Section */
+#services {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: #ecf0f1;
+    padding: 40px;
+    border-radius: 8px;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service i {
+    font-size: 40px;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 80px 20px;
+    background-color: #f1f2f6;
+    text-align: center;
+}
+
+.testimonial-container {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+form textarea,
+form input {
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+}

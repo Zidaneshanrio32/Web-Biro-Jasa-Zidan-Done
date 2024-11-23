@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biro Jasa Zidan - STNK, BPKB, Mutasi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">BIRO JASA ZIDAN</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#testimonials">Testimonial</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Solusi Cepat & Aman untuk Dokumen Kendaraan Anda</h1>
+            <p>Pengurusan STNK, BPKB, dan Mutasi Kendaraan secara profesional dan terpercaya.</p>
+            <a href="#contact" class="cta-button">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <div class="services-container">
+            <div class="service">
+                <i class="fas fa-car"></i>
+                <h3>Pengurusan STNK</h3>
+                <p>Kami menguruskan STNK dengan cepat dan aman untuk Anda.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-book"></i>
+                <h3>Pengurusan BPKB</h3>
+                <p>Pengurusan BPKB kendaraan Anda tanpa repot, dengan layanan yang terpercaya.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-exchange-alt"></i>
+                <h3>Mutasi Kendaraan</h3>
+                <p>Proses mutasi kendaraan antar daerah atau pemilik dengan mudah.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Apa Kata Pelanggan</h2>
+        <div class="testimonial-container">
+            <?php include 'testimonials.php'; ?>
+        </div>
+        <form action="submit_testimonial.php" method="POST" id="testimonial-form">
+            <h3>Berikan Testimonial Anda</h3>
+            <textarea name="testimonial" placeholder="Tulis testimonial Anda..." required></textarea>
+            <input type="text" name="name" placeholder="Nama Anda" required>
+            <button type="submit">Kirim Testimonial</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Hubungi kami untuk informasi lebih lanjut:</p>
+        <p>Email: <a href="mailto:support@zidanbirojasa.com">support@zidanbirojasa.com</a></p>
+        <p>Telp: <a href="https://wa.me/+6281388382100">0813-8838-2100
+        </a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Biro Jasa Zidan | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+`
